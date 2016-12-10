@@ -26,6 +26,7 @@ the Gogs API does not permit modification of timestamps.
 - Install go
 - Set GOPATH
 - *Backup your Gogs data!* Your first migration may not go as planned
+- API returns an error if the database cannot be accessed. Therefore, you avoid all other sources of traffic during the migration
 
 # Building and running
 
