@@ -1,0 +1,9 @@
+{
+"GitlabURL": "http://gitlab.avocado.lan/api/v3",
+"GitlabAPIKey": "Jb_zeFc99w8TDwC_e75-",
+"GogsURL": "http://gogs.avocado.lan",
+"GogsAPIKey": "a4f87d9ef73a557d6dba387ccda2344f9ae69385",
+"UserMap": [{"From": "matthew", "To": "mruschmann"},
+            {"From": "cjohnson", "To": "cochocinco"},
+            {"From": "cochocinco", "To": "cjohnson"}]
+}
