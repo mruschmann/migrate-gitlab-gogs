@@ -203,7 +203,9 @@ func DoMigration(dryrun bool, git *gitlab.Client, gg *gogs.Client, gitPrj int, g
 			opt.Title = issues[i].Title
 			opt.Body = issues[i].Description
 			opt.Assignee = MapUser(issues[i].Author.Username) // Gitlab user to Gogs user map
-			opt.Milestone = MapMilestone(mmap, issues[i].Milestone.ID)
+			if (issues[i].Milestone != nil) {
+				opt.Milestone = MapMilestone(mmap, issues[i].Milestone.ID)
+			}
 			opt.Closed = issues[i].State == "closed"
 			if !dryrun {
 				// Never write to the API during a dryrun
