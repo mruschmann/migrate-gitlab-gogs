@@ -2,7 +2,8 @@ package main
 
 import (
 	"github.com/xanzy/go-gitlab"
-	"github.com/gogits/go-gogs-client"
+//	"github.com/gogits/go-gogs-client"
+	"github.com/mruschmann/go-gogs-client"
 	"fmt"
 	"bufio"
 	"os"
